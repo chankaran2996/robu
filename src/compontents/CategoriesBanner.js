@@ -1,6 +1,7 @@
 import React from 'react';
 import { CardGroup } from 'reactstrap';
 import CategoriesCard from './CategoriesCard';
+import "./CategoriesBabber.css"
 
 const CategoriesBanner = () => {
     let data =[
@@ -87,11 +88,13 @@ const CategoriesBanner = () => {
     ]
   return (
     <div>
-      <CardGroup>{
-        data.map((e) => <CategoriesCard data={e} />
-        )
+        <h3><u>Categories</u></h3>
+    <div className='Categories'>
+    {
+        data.map((e) => <CategoriesCard data={e} />)
     }
-      </CardGroup>
+
+    </div>
     </div>
   )
 }
