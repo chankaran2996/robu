@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Navbar.css";
 import {
   Nav,
   NavItem,
@@ -12,7 +13,8 @@ import {
 const Navbar = () => {
   return (
     <div>
-      <Nav>
+      <Nav className='nav-container'>
+      <div className='nav-sub-container1'>
         <NavItem>
           <NavLink disabled >
             100727-7259-8332
@@ -23,6 +25,9 @@ const Navbar = () => {
             Custer support
           </NavLink>
         </NavItem>
+        </div>
+
+        <div className='nav-sub-container2'>
         <NavItem>
           <NavLink disabled >
             My Orders
@@ -33,6 +38,7 @@ const Navbar = () => {
             Track My Order
           </NavLink>
         </NavItem>
+        
         <UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav caret>
             Myaccount
@@ -42,6 +48,7 @@ const Navbar = () => {
             <DropdownItem>Mycart</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
+        </div>
       </Nav>
 
     </div>

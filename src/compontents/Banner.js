@@ -6,6 +6,7 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
+import "./Banner.css"
 
 const items = [
   {
@@ -50,21 +51,24 @@ const Banner = () => {
   
     const slides = items.map((item) => {
       return (
+       
         <CarouselItem
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img className='carousel-img' src={item.src} alt={item.altText} />
           {/* <CarouselCaption
             captionText={item.caption}
             captionHeader={item.caption}
           /> */}
         </CarouselItem>
+        
       );
     });
   
     return (
+      
       <Carousel
         activeIndex={activeIndex}
         next={next}
@@ -88,6 +92,8 @@ const Banner = () => {
           onClickHandler={next}
         />
       </Carousel>
+
+  
     );
 }
 

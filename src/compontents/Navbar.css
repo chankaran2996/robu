@@ -1,0 +1,13 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-sub-container1{
+ display: flex;
+}
+
+.nav-sub-container2{
+    display: flex;
+   }
