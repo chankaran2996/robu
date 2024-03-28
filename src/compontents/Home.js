@@ -4,6 +4,7 @@ import Header from './Header';
 import Banner from './Banner';
 import NavbarTwo from './NavbarTwo';
 import CategoriesBanner from './CategoriesBanner';
+import ProductsBanner from './ProductsBanner';
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <NavbarTwo/>
       <Banner/>
       <CategoriesBanner/>
+      <ProductsBanner/>
     </div>
   )
 }
