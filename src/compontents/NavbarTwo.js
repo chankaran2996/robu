@@ -8,11 +8,15 @@ import {
     DropdownMenu,
     UncontrolledDropdown,
     Button,
-} from 'reactstrap'
+} from 'reactstrap';
+import navbarLogo from "../Assets/logo.jpeg";
+import "./NavbarTwo.css";
+
 const NavbarTwo = () => {
     return (
         <div>
             <Nav>
+                <img className='navbarLogo' src={navbarLogo} alt="Navbar-logo"/>
                 <NavItem>
                     <NavLink disabled>
                         Home
