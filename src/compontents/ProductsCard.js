@@ -3,7 +3,9 @@ import { Card,CardBody,CardTitle,CardImg,CardSubtitle,CardText } from 'reactstra
 const ProductsCard = ({data}) => {
     console.log(data)
   return (
-    <Card>
+    <Card
+    sx={{'&:hover': { boxShadow: "5px 5px 5px 5px" , borderColor: 'neutral.outlinedHoverBorder' },}}
+    >
         <CardImg src={data.src}/>
         <CardBody>
             <CardTitle>
